@@ -140,8 +140,8 @@ Use the getLastReview function below to do the following:
 
 
 function getLastReview(arr) {
-  // let lastIndex = arr.length - 1;
-  return `${arr[7]['name']} gave the restaurant a ${arr[7]['rating']} star review, and their feedback was: ${arr[7]['feedback']}`
+  let lastIndex = arr.length - 1;
+  return `${arr[lastIndex]['name']} gave the restaurant a ${arr[lastIndex]['rating']} star review, and their feedback was: ${arr[lastIndex]['feedback']}`
 } 
 console.log('test', reviews)
 console.log(getLastReview(reviews))
